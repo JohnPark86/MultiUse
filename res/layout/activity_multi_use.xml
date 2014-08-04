@@ -1,0 +1,71 @@
+<!--
+Author: John Park
+File: activity_multi_use.xml
+This file controls the layuot of the multi_use .
+Activity screen.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MultiUse" >
+
+    
+     <RadioGroup
+         android:id="@+id/group"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:orientation="vertical" >
+
+         <RadioButton
+             android:id="@+id/Phone"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:drawableRight="@drawable/phone"
+              />
+
+         <RadioButton
+             android:id="@+id/Web"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:drawableRight="@drawable/globe" 
+             />
+
+         <RadioButton
+             android:id="@+id/maps"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center" 
+             android:drawableRight="@drawable/map"
+             />
+     </RadioGroup>
+
+  
+
+       <EditText
+           android:id="@+id/editText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:gravity="center"
+           android:hint=" "
+           android:minLines="2"
+           android:inputType="text"
+           android:orientation="vertical" 
+       />
+
+       <ImageButton
+           android:id="@+id/btn1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@null"
+           android:layout_gravity="center"
+           android:onClick="onClick" 
+           android:src="@drawable/arrow"
+       />
+</LinearLayout>
